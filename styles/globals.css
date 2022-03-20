@@ -1,9 +1,18 @@
+@font-face {
+  font-family: Toboggan;
+  src: url("../public/fonts/Toboggan-HeavyCAPS.woff2");
+}
+
+@font-face {
+  font-family: Toboggan-Light;
+  src: url("../public/fonts/Light.woff2");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Toboggan;
 }
 
 a {
