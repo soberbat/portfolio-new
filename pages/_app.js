@@ -8,19 +8,23 @@ import { useState } from "react";
 //THEME
 const LightTheme = {
   background: "#fffffe",
+  secondaryBackground: "#f9fafa",
   header: "#1B13F2",
   headerDarker: "#150FBF",
   headerDarkest: "#070540",
   text: "#0D0D0D",
   gray: "#D7D8D9",
+  grayDarker: "#6e6e6d",
 };
 const DarkTheme = {
   background: "#0D0D0D",
+  secondaryBackground: "ffff",
   header: "#1B13F2",
   headerDarker: "#150FBF",
   headerDarkest: "#070540",
   text: "#fffffe",
   gray: "#D7D8D9",
+  grayDarker: "#6e6e6d",
 };
 //THEME
 
