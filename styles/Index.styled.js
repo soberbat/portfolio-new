@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 10rem 0;
+  padding: 8rem 0;
   color: #0d0d0d;
   display: flex;
   flex-direction: column;
@@ -9,13 +9,14 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
-export const Inner = styled.div`
-  max-width: 890px;
+export const Inner = styled.section`
+  max-width: 950px;
   padding: 0.5rem;
 `;
 
 export const Description = styled.section`
   width: 100%;
+
   text-align: left;
   h1 {
     font-size: 3.4rem;
@@ -39,4 +40,53 @@ export const Description = styled.section`
   }
 `;
 
-export const Featured = styled.section``;
+export const İconWrap = styled.div`
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  a {
+    padding: 0.3rem 0.3rem;
+    border-radius: 3px;
+    :hover {
+      background-color: #fafafa;
+      text-decoration: none;
+      color: black;
+    }
+
+    svg {
+      color: #bebebe;
+      :hover {
+        color: #242424;
+      }
+    }
+  }
+`;
+
+export const Divider = styled.span`
+  height: 0px;
+  width: 100%;
+  border-radius: 3px;
+  border-top: 1px solid ${({ theme }) => theme.gray};
+`;
+
+export const Featured = styled.section`
+  max-width: 950px;
+  margin-top: 6rem;
+`;
+
+export const SectionDesc = styled.div`
+  margin-bottom: 1rem;
+  h3 {
+    font-weight: 700;
+    font-size: 1.9rem;
+    margin-bottom: 0.7rem;
+  }
+  span {
+    color: #bebebe;
+    font-size: 0.95rem;
+    span {
+      color: ${({ theme }) => theme.grayDarker};
+    }
+  }
+`;

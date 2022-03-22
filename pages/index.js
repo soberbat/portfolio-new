@@ -5,9 +5,13 @@ import {
   Description,
   Inner,
   Featured,
+  İconWrap,
+  Divider,
+  SectionDesc,
 } from "../styles/Index.styled.js";
-
 import { LinkedinIcon, GithubIcon } from "../styles/GlobalStyle";
+import { FeaturedProject } from "../src/components/FeaturedProject.js";
+import SvgDivider from "../src/components/SvgDivider.js";
 
 export default function Home() {
   return (
@@ -24,6 +28,7 @@ export default function Home() {
               Developer creating digital tools and thoughtful, intuitive
               interfaces.
             </h1>
+
             <span>
               I'm Berat Genç, <span>Istanbul|TR </span> based self taught Front
               End Developer. With 1+ years of <span> Graphic Design </span>
@@ -32,17 +37,33 @@ export default function Home() {
               backed with <span>concise&clean</span> code structure with
               background.
             </span>
+
             <span>
               Organized, and skilled in written communication with effective
               time management skills. Able to effectively self-manage during
               independent projects, and willing to do so as collaborate as part
               of a productive and excited team.
             </span>
+
+            <İconWrap>
+              <a href="www.google.com">{LinkedinIcon}</a>
+              <a href="www.google.com">{GithubIcon}</a>
+            </İconWrap>
+
+            <Divider />
           </Description>
 
-          <Featured>{LinkedinIcon} </Featured>
+          <Featured>
+            <SectionDesc>
+              <h3>Featured Projects</h3>
+              <span>
+                A collection of some projects that have shipped recently. And of
+                course this website made with <br /> <span>Next.js</span>
+              </span>
+            </SectionDesc>
+            <FeaturedProject />
+          </Featured>
         </Inner>
-        <a href="google.com"></a>
       </Container>
     </>
   );
