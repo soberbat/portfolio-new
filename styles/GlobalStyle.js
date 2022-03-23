@@ -15,7 +15,34 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
+export const theme = {
+  background: "#fffffe",
+  secondaryBackground: "#f9fafa",
+  header: "#1B13F2",
+  headerDarker: "#150FBF",
+  headerDarkest: "#070540",
+  text: "#0D0D0D",
+  gray: "#D7D8D9",
+  grayDarker: "#6e6e6d",
+};
+
 //GLOBAL STYLES
+
+//FRAMER MOTİON
+
+export const PageTransitionVariants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
+//FRAMER MOTİON
 
 // MEDİA QUERİES
 

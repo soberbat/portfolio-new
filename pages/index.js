@@ -7,11 +7,11 @@ import {
   Featured,
   İconWrap,
   Divider,
-  SectionDesc,
 } from "../styles/Index.styled.js";
 import { LinkedinIcon, GithubIcon } from "../styles/GlobalStyle";
 import { FeaturedProject } from "../src/components/FeaturedProject.js";
-import SvgDivider from "../src/components/SvgDivider.js";
+
+import { useRouter } from "next/router";
 
 export default function Home() {
   return (
@@ -54,13 +54,6 @@ export default function Home() {
           </Description>
 
           <Featured>
-            <SectionDesc>
-              <h3>Featured Projects</h3>
-              <span>
-                A collection of some projects that have shipped recently. And of
-                course this website made with <br /> <span>Next.js</span>
-              </span>
-            </SectionDesc>
             <FeaturedProject />
           </Featured>
         </Inner>

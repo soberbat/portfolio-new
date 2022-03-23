@@ -10,7 +10,7 @@ export const Navigation = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.2rem 1rem;
+  padding: 1.3rem 2rem;
   border-bottom: 0.3px solid ${({ theme }) => theme.gray};
   ul {
     display: flex;

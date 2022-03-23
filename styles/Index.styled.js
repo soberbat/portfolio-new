@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Inner = styled.section`
-  max-width: 950px;
+  max-width: 850px;
   padding: 0.5rem;
 `;
 
@@ -71,22 +71,6 @@ export const Divider = styled.span`
 `;
 
 export const Featured = styled.section`
-  max-width: 950px;
-  margin-top: 6rem;
-`;
-
-export const SectionDesc = styled.div`
-  margin-bottom: 1rem;
-  h3 {
-    font-weight: 700;
-    font-size: 1.9rem;
-    margin-bottom: 0.7rem;
-  }
-  span {
-    color: #bebebe;
-    font-size: 0.95rem;
-    span {
-      color: ${({ theme }) => theme.grayDarker};
-    }
-  }
+  max-width: 850px;
+  margin-top: 3rem;
 `;

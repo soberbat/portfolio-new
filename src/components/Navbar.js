@@ -1,6 +1,7 @@
 import { Gradient } from "../../styles/GlobalStyle";
 import Logo from "./Logo";
 import { Container, Navigation } from "/styles/Navbar.styled.js";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -9,9 +10,21 @@ const Navbar = () => {
       <Navigation>
         <Logo width="75px" />
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
+          <li>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/projects">
+              <a>Projects</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/me">
+              <a>Me</a>
+            </Link>
+          </li>
         </ul>
       </Navigation>
     </Container>

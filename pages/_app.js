@@ -1,41 +1,29 @@
 import Layout from "../src/components/Layout";
-import { GlobalStyle } from "../styles/GlobalStyle";
 import { ThemeProvider } from "styled-components";
-import styled from "styled-components";
 import "../styles/globals.css";
-import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  GlobalStyle,
+  theme,
+  PageTransitionVariants,
+} from "../styles/GlobalStyle";
 
-//THEME
-const LightTheme = {
-  background: "#fffffe",
-  secondaryBackground: "#f9fafa",
-  header: "#1B13F2",
-  headerDarker: "#150FBF",
-  headerDarkest: "#070540",
-  text: "#0D0D0D",
-  gray: "#D7D8D9",
-  grayDarker: "#6e6e6d",
-};
-const DarkTheme = {
-  background: "#0D0D0D",
-  secondaryBackground: "ffff",
-  header: "#1B13F2",
-  headerDarker: "#150FBF",
-  headerDarkest: "#070540",
-  text: "#fffffe",
-  gray: "#D7D8D9",
-  grayDarker: "#6e6e6d",
-};
-//THEME
-
-function MyApp({ Component, pageProps }) {
-  const [theme, setTheme] = useState(true);
+function MyApp({ Component, pageProps, router }) {
   return (
     <>
-      <ThemeProvider theme={theme ? LightTheme : DarkTheme}>
+      <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Layout>
-          <Component {...pageProps} />
+          <AnimatePresence exitBeforeEnter>
+            <motion.div
+              key={router.route}
+              variants={PageTransitionVariants}
+              animate="animate"
+              initial="initial"
+            >
+              <Component {...pageProps} />
+            </motion.div>
+          </AnimatePresence>
         </Layout>
       </ThemeProvider>
     </>
