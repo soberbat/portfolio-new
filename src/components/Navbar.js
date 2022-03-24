@@ -1,4 +1,4 @@
-import { Gradient } from "../../styles/GlobalStyle";
+import { Gradient } from "../../styles/Navbar.styled";
 import Logo from "./Logo";
 import { Container, Navigation } from "/styles/Navbar.styled.js";
 import Link from "next/link";

@@ -11,7 +11,7 @@ import {
 import { LinkedinIcon, GithubIcon } from "../styles/GlobalStyle";
 import { FeaturedProject } from "../src/components/FeaturedProject.js";
 
-import { useRouter } from "next/router";
+import Router, { useRouter } from "next/router";
 
 export default function Home() {
   return (

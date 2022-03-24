@@ -10,8 +10,12 @@ export const Container = styled.div`
 `;
 
 export const Inner = styled.section`
+  width: 100%;
   max-width: 850px;
   padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export const Description = styled.section`

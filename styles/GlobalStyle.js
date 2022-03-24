@@ -68,16 +68,6 @@ export const device = {
 
 // MEDİA QUERİES
 
-export const Gradient = styled.div`
-  height: 4px;
-  background: rgb(252, 176, 69);
-  background: linear-gradient(
-    90deg,
-    rgba(252, 176, 69, 1) 3%,
-    rgba(131, 58, 180, 1) 53%,
-    rgba(29, 116, 253, 1) 100%
-  );
-`;
 
 //İCONS
 

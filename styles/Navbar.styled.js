@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const Gradient = styled.div`
+  height: 4px;
+  background-color: #d7d8d9;
+`;
+
 export const Container = styled.div`
   position: fixed;
   width: 100%;
