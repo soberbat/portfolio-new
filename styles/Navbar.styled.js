@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const Gradient = styled.div`
   height: 4px;
-  background-color: #d7d8d9;
+  background-color: #ebebeb;
 `;
 
 export const Container = styled.div`
   position: fixed;
+  z-index: 100;
   width: 100%;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(9.5px);

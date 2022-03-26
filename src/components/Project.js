@@ -6,6 +6,7 @@ import {
 } from "../../styles/Projects.styled";
 import Image from "next/image";
 
+
 export const Project = ({
   project,
   header,

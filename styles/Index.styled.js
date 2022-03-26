@@ -20,13 +20,14 @@ export const Inner = styled.section`
 
 export const Description = styled.section`
   width: 100%;
-
   text-align: left;
+
   h1 {
     font-size: 3.4rem;
     line-height: 4.7rem;
     margin: 0;
     font-weight: 700;
+    color: ${({ theme }) => theme.black};
   }
   span {
     margin-top: 2.4rem;

@@ -7,6 +7,7 @@ import {
   GlobalStyle,
   theme,
   PageTransitionVariants,
+  ProjectPageVariants,
 } from "../styles/GlobalStyle";
 
 function MyApp({ Component, pageProps, router }) {
@@ -14,19 +15,38 @@ function MyApp({ Component, pageProps, router }) {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Layout>
-          <AnimatePresence exitBeforeEnter>
-            <NextNProgress color="black" height={4} />
+
+        {router.pathname.startsWith("/projects/") ? (
+          <AnimatePresence>
             <motion.div
               key={router.route}
-              variants={PageTransitionVariants}
+              variants={ProjectPageVariants}
               animate="animate"
               initial="initial"
+              exit="exit"
             >
               <Component {...pageProps} />
             </motion.div>
           </AnimatePresence>
-        </Layout>
+        ) : (
+          <Layout>
+            <AnimatePresence>
+              <NextNProgress
+                color="radial-gradient(circle, rgba(193,34,195,1) 0%, rgba(253,187,45,1) 100%)"
+                height={3}
+              />
+              <motion.div
+                key={router.route}
+                variants={PageTransitionVariants}
+                animate="animate"
+                initial="initial"
+                exit="exit"
+              >
+                <Component {...pageProps} />
+              </motion.div>
+            </AnimatePresence>
+          </Layout>
+        )}
       </ThemeProvider>
     </>
   );

@@ -5,6 +5,7 @@ export const Inner = styled.section`
   max-width: 880px;
   padding: 2rem;
   display: flex;
+  gap: 10rem;
   align-items: center;
   flex-direction: column;
 `;
@@ -18,7 +19,8 @@ export const ImageContainer = styled.div`
   flex-direction: column;
   gap: 1rem;
   position: relative;
-  border: 0.4px solid #bebebe;
+  border: 0.5px solid #bebebe;
+  z-index: 0;
 
   h1 {
     font-weight: 700;
@@ -31,7 +33,6 @@ export const ImageContainer = styled.div`
 
   .image {
     object-fit: contain;
-
     width: 100% !important;
     position: relative !important;
     height: unset !important;
@@ -43,11 +44,11 @@ export const ProjectContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 3rem;
+  gap: 5rem;
 `;
 
 export const TextContainer = styled.div`
-  max-width: 80%;
+  max-width: 75%;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -55,7 +56,21 @@ export const TextContainer = styled.div`
 
   h1 {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.8rem;
+
     color: #0d0d0d;
+    letter-spacing: 0.4rem;
+  }
+
+  span {
+    font-weight: 100;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    color: ${({ theme }) => theme.grayDarker};
+
+    span {
+      color: #0d0d0d;
+      font-style: italic;
+    }
   }
 `;

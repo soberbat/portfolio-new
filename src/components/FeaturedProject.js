@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  border: 0.3px solid ${({ theme }) => theme.gray};
-  background-color: #fafafa;
+  background-color: #fdfdfd;
+  border: 0.3px solid gainsboro;
   border-radius: 7px;
   padding: 2rem 2rem;
   margin-bottom: 1rem;
@@ -13,14 +13,12 @@ const Container = styled.div`
   transition: all ease-in-out 0.3s;
 
   :hover {
-    border: 1.3px solid ${({ theme }) => theme.gray};
-    background-color: #fafafe;
-    box-shadow: 0px 0px 15px -10px rgba(60, 141, 173, 0.3);
     transform: translateY(-5px);
+    border: 1px solid gainsboro;
   }
 
   svg {
-    color: #3c8dad;
+    color: #1b4353;
   }
 
   div {
@@ -31,14 +29,13 @@ const Container = styled.div`
 
     span {
       color: ${({ theme }) => theme.grayDarker};
-      font-size: 1rem;
-      line-height: 1.7rem;
+      font-size: 0.8rem;
+      line-height: 1rem;
     }
   }
 `;
 const SectionDesc = styled.div`
   margin-bottom: 3rem;
-
   h3 {
     font-weight: 700;
     font-size: 1.9rem;
