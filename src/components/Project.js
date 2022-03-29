@@ -3,9 +3,9 @@ import {
   ProjectContainer,
   TextContainer,
   ImageContainer,
+  CtaContainer,
 } from "../../styles/Projects.styled";
 import Image from "next/image";
-
 
 export const Project = ({
   project,
@@ -23,6 +23,10 @@ export const Project = ({
         <span>{descriptionOne}</span>
         <span>{descriptionTwo}</span>
       </TextContainer>
+      <CtaContainer>
+        <button>View Live</button>
+        <button>Source Code</button>
+      </CtaContainer>
     </ProjectContainer>
   );
 };

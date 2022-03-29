@@ -1,5 +1,11 @@
 import styled from "styled-components";
 import { device } from "./GlobalStyle";
+import { motion } from "framer-motion";
+
+const colors = {
+  background: "#3F515C",
+  headline: "#F2E30F",
+};
 
 export const Container = styled.div`
   display: flex;
@@ -42,8 +48,8 @@ export const ProjectHeadlineSection = styled.div`
   left: 0;
   height: 100vh;
   width: 50vw;
-  color: white;
-  background-color: #2032f8;
+  color: ${(props) => (props.resume ? "white" : colors.headline)};
+  background-color: ${(props) => (props.resume ? "blue" : colors.background)};
 
   h1 {
     font-size: 5rem;
@@ -70,12 +76,68 @@ export const Cta = styled.div`
   padding: 3rem;
 `;
 
-export const Projectİnfos = styled.div`
+export const Projectİnfos = styled(motion.div)`
   display: flex;
+  align-items: center;
+  flex-direction: column;
   overflow-y: scroll;
   width: 50vw;
   height: 100vh;
   position: absolute;
   right: 0;
   padding: 5rem;
+  background-color: white;
+  gap: 1.2rem;
 `;
+
+export const Headline = styled(motion.h1)`
+  color: ${({ theme }) => theme.black};
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+`;
+
+export const AboutText = styled.span`
+  display: inline-block;
+  line-height: 1.6rem;
+  text-align: center;
+  color: ${({ theme }) => theme.grayDarker};
+`;
+
+export const TechStack = styled.div`
+  display: flex;
+
+  span {
+    width: 75px;
+  }
+`;
+
+//FRAMER MOTTİON PROPS
+
+export const ContProps = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+      delay: 0.4,
+      duration: 3,
+    },
+  },
+};
+
+export const ItemProps = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 3,
+    },
+  },
+};
+
+//FRAMER MOTTİON PROPS

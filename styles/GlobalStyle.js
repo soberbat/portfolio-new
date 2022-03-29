@@ -1,8 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
+import Router from "next/router";
+import { motion } from "framer-motion";
 
 //GLOBAL STYLES
-
 export const GlobalStyle = createGlobalStyle`
   html,
   body {
@@ -13,9 +14,13 @@ export const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
-
 `;
 
+export const Container = styled(motion.div)``;
+
+//GLOBAL STYLES
+
+// THEME
 export const theme = {
   background: "#fffffe",
   secondaryBackground: "#f9fafa",
@@ -28,18 +33,19 @@ export const theme = {
   black: "#272838",
 };
 
+//THEME
+
 //GLOBAL STYLES
 
 //FRAMER MOTİON
-
-export const PageTransitionVariants = {
+export const PageTransitionMotionProps = {
   initial: {
     opacity: 0,
-    y: 100,
+    x: 50,
   },
   animate: {
     opacity: 1,
-    y: 0,
+    x: 0,
     ease: "ease-out",
     transition: {
       duration: 0.6,
@@ -50,7 +56,7 @@ export const PageTransitionVariants = {
   },
 };
 
-export const ProjectPageVariants = {
+export const ProjectPageMotionProps = {
   initial: {
     opacity: 0,
     scale: 0,
@@ -61,7 +67,7 @@ export const ProjectPageVariants = {
     y: 0,
     ease: "ease-in",
     transition: {
-      duration: 0.4,
+      duration: 0.8,
     },
   },
   exit: {
@@ -72,32 +78,13 @@ export const ProjectPageVariants = {
 
 //FRAMER MOTİON
 
-// MEDİA QUERİES
-
-const size = {
-  mobileS: "320px",
-  mobileM: "375px",
-  mobileL: "425px",
-  tablet: "768px",
-  laptop: "1024px",
-  laptopL: "1440px",
-  desktop: "2560px",
-};
+// MEDİA QUERY
 export const device = {
-  mobileS: `(min-width: ${size.mobileS})`,
-  mobileM: `(min-width: ${size.mobileM})`,
-  mobileL: `(min-width: ${size.mobileL})`,
-  tablet: `(max-width: ${size.tablet})`,
-  laptop: `(min-width: ${size.laptop})`,
-  laptopL: `(min-width: ${size.laptopL})`,
-  desktop: `(min-width: ${size.desktop})`,
-  desktopL: `(min-width: ${size.desktop})`,
+  tablet: `(max-width: 768px)`,
 };
-
-// MEDİA QUERİES
+// MEDİA QUERY
 
 //İCONS
-
 export const LinkedinIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -155,5 +142,13 @@ export const UpRightArrow = (
     />
   </svg>
 );
-
 //İCONS
+
+//PROGRESSBAR
+
+export const NextNProgressProps = {
+  color:
+    "radial-gradient(circle, rgba(193,34,195,1) 0%, rgba(253,187,45,1) 100%)",
+  height: 3,
+};
+//PROGRESSBAR

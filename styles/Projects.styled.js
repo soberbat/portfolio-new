@@ -44,7 +44,7 @@ export const ProjectContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 5rem;
+  gap: 3rem;
 `;
 
 export const TextContainer = styled.div`
@@ -72,5 +72,21 @@ export const TextContainer = styled.div`
       color: #0d0d0d;
       font-style: italic;
     }
+  }
+`;
+
+export const CtaContainer = styled.div`
+  display: flex;
+  width: 75%;
+  align-items: flex-start;
+
+  gap: 1rem;
+  button {
+    color: black;
+    font-weight: 100;
+    font-size: 0.7rem;
+    border: 0.4px gainsboro solid;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
   }
 `;

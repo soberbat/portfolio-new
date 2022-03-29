@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 const Container = styled.div`
   background-color: #fdfdfd;
@@ -11,7 +12,7 @@ const Container = styled.div`
   gap: 1.4rem;
   align-items: flex-start;
   transition: all ease-in-out 0.3s;
-
+  cursor: pointer;
   :hover {
     transform: translateY(-5px);
     border: 1px solid gainsboro;
@@ -73,6 +74,7 @@ const SelectedProjects = [
         />
       </svg>
     ),
+    link: "/projects/the-map",
   },
 
   {
@@ -92,8 +94,13 @@ const SelectedProjects = [
         <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z" />
       </svg>
     ),
+    link: "/projects/resume-app",
   },
 ];
+
+// const containerProps = {
+//   onClick: e =>
+// }
 
 export const FeaturedProject = ({}) => {
   return (
@@ -108,13 +115,15 @@ export const FeaturedProject = ({}) => {
 
       {SelectedProjects.map((project) => {
         return (
-          <Container>
-            {project.svg}
-            <div>
-              <h5> {project.header} </h5>
-              <span> {project.description} </span>
-            </div>
-          </Container>
+          <Link href={project.link}>
+            <Container>
+              {project.svg}
+              <div>
+                <h5> {project.header} </h5>
+                <span> {project.description} </span>
+              </div>
+            </Container>
+          </Link>
         );
       })}
     </>

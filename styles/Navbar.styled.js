@@ -28,5 +28,11 @@ export const Navigation = styled.div`
     font-family: "Ubuntu Mono", monospace;
     font-weight: 400;
     list-style: none;
+
+    li {
+      a:hover {
+        color: black;
+      }
+    }
   }
 `;
