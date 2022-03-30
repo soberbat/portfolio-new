@@ -4,7 +4,7 @@ const SvgFramerMotion = (props) => (
   <svg
     data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 150 150"
+    viewBox="-150 0 500 150"
     {...props}
   >
     <path

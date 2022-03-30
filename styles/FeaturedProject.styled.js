@@ -39,17 +39,17 @@ export const Container = styled.div`
 `;
 
 export const ProjectHeadlineSection = styled.div`
-  padding: 2rem;
+  color: ${(props) => (props.resume ? "white" : colors.headline)};
+  background-color: ${(props) => (props.resume ? "blue" : colors.background)};
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   position: fixed;
+  padding: 2rem;
   top: 0;
   left: 0;
   height: 100vh;
   width: 50vw;
-  color: ${(props) => (props.resume ? "white" : colors.headline)};
-  background-color: ${(props) => (props.resume ? "blue" : colors.background)};
 
   h1 {
     font-size: 5rem;
@@ -58,10 +58,11 @@ export const ProjectHeadlineSection = styled.div`
 
   span {
     cursor: pointer;
+    display: flex;
     font-size: 1.6rem;
     font-weight: 100;
-    display: flex;
     gap: 1.2rem;
+
     :hover {
       text-decoration: underline;
     }
@@ -78,37 +79,84 @@ export const Cta = styled.div`
 
 export const Projectİnfos = styled(motion.div)`
   display: flex;
-  align-items: center;
   flex-direction: column;
   overflow-y: scroll;
-  width: 50vw;
-  height: 100vh;
   position: absolute;
+  background-color: white;
+  height: 100vh;
+  width: 50vw;
   right: 0;
   padding: 5rem;
-  background-color: white;
-  gap: 1.2rem;
+  line-height: 2rem;
 `;
 
 export const Headline = styled(motion.h1)`
   color: ${({ theme }) => theme.black};
   font-weight: 700;
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
 `;
 
 export const AboutText = styled.span`
-  display: inline-block;
-  line-height: 1.6rem;
-  text-align: center;
   color: ${({ theme }) => theme.grayDarker};
-`;
-
-export const TechStack = styled.div`
-  display: flex;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 5rem;
 
   span {
-    width: 75px;
+    color: ${({ theme }) => theme.black};
+  }
+`;
+
+export const KeyAchievements = styled.div`
+  h1 {
+    color: ${({ theme }) => theme.black};
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  span {
+    color: ${({ theme }) => theme.grayDarker};
+  }
+`;
+
+export const List = styled.ul`
+  color: ${({ theme }) => theme.grayDarker};
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 0.4rem;
+  margin-left: -26px;
+
+  li {
+    list-style: none;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    padding: 0.2rem 1rem;
+
+    :hover {
+      background-color: ${({ theme }) => theme.gray};
+    }
+  }
+`;
+
+export const Obstacles = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  margin: 5rem 0rem;
+
+  h1 {
+    color: ${({ theme }) => theme.black};
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  span {
+    margin-bottom: 1rem;
+    color: ${({ theme }) => theme.grayDarker};
   }
 `;
 
