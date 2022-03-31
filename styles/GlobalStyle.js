@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
-import Router from "next/router";
 import { motion } from "framer-motion";
 
 //GLOBAL STYLES
@@ -48,7 +47,7 @@ export const PageTransitionMotionProps = {
     x: 0,
     ease: "ease-out",
     transition: {
-      duration: 0.6,
+      duration: 0.5,
     },
   },
   exit: {
@@ -59,15 +58,14 @@ export const PageTransitionMotionProps = {
 export const ProjectPageMotionProps = {
   initial: {
     opacity: 0,
-    scale: 0,
+    x: -1500,
   },
   animate: {
     opacity: 1,
-    scale: 1,
-    y: 0,
+    x: 0,
     ease: "ease-in",
     transition: {
-      duration: 0.8,
+      duration: 1.1,
     },
   },
   exit: {

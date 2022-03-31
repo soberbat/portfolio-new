@@ -90,6 +90,8 @@ export const Projectİnfos = styled(motion.div)`
   line-height: 2rem;
 `;
 
+export const AboutContainer = styled(motion.div)``;
+
 export const Headline = styled(motion.h1)`
   color: ${({ theme }) => theme.black};
   font-weight: 700;
@@ -97,7 +99,7 @@ export const Headline = styled(motion.h1)`
   text-align: left;
 `;
 
-export const AboutText = styled.span`
+export const AboutText = styled(motion.span)`
   color: ${({ theme }) => theme.grayDarker};
   display: inline-block;
   text-align: left;
@@ -108,7 +110,7 @@ export const AboutText = styled.span`
   }
 `;
 
-export const KeyAchievements = styled.div`
+export const KeyAchievements = styled(motion.div)`
   h1 {
     color: ${({ theme }) => theme.black};
     text-align: left;
@@ -137,14 +139,14 @@ export const List = styled.ul`
 
     :hover {
       background-color: ${({ theme }) => theme.gray};
+      color: #fdfdfd;
     }
   }
 `;
 
-export const Obstacles = styled.div`
+export const Obstacles = styled(motion.div)`
   display: flex;
   flex-direction: column;
-
   margin: 5rem 0rem;
 
   h1 {
@@ -156,7 +158,12 @@ export const Obstacles = styled.div`
 
   span {
     margin-bottom: 1rem;
+    font-size: 1rem;
     color: ${({ theme }) => theme.grayDarker};
+
+    ul {
+      color: ${({ theme }) => theme.text};
+    }
   }
 `;
 
@@ -169,23 +176,30 @@ export const ContProps = {
   animate: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.5,
-      delay: 0.4,
-      duration: 3,
+      staggerChildren: 0.4,
+      delay: 0.6,
+      duration: 0.3,
+      when: "beforeChildren",
+    },
+  },
+};
+
+export const ChildProps = {
+  initial: {
+    opacity: 0,
+    x: 50,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.7,
     },
   },
 };
 
 export const ItemProps = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-    transition: {
-      duration: 3,
-    },
-  },
+  variants: ChildProps,
 };
 
 //FRAMER MOTTİON PROPS

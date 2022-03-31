@@ -12,9 +12,8 @@ const TechStackContainer = styled.div`
     font-weight: 700;
     text-align: left;
     margin-bottom: 1rem;
-
+    font-size: 1.5rem;
     color: ${({ theme }) => theme.black};
-
     padding: 0 0 0 1rem;
   }
   div {

@@ -11,7 +11,6 @@ import {
   ProjectPageMotionProps,
   NextNProgressProps,
   Container,
-  Switcher,
 } from "../styles/GlobalStyle";
 
 function MyApp({ Component, pageProps, router }) {
@@ -20,9 +19,12 @@ function MyApp({ Component, pageProps, router }) {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         {router.pathname.startsWith("/projects/") ? (
-          <Container key={router.route} {...ProjectPageMotionProps}>
-            <Component {...pageProps} />
-          </Container>
+          <>
+            <NextNProgress {...NextNProgressProps} />
+            <Container key={router.route} {...ProjectPageMotionProps}>
+              <Component {...pageProps} />
+            </Container>
+          </>
         ) : (
           <Layout>
             <NextNProgress {...NextNProgressProps} />
