@@ -51,8 +51,8 @@ export default function projects() {
   return (
     <Container>
       <Inner>
-        {projectsİnfo.map((project) => (
-          <Project {...project} />
+        {projectsİnfo.map((project, i) => (
+          <Project key={i + key} {...project} />
         ))}
       </Inner>
     </Container>

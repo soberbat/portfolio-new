@@ -97,9 +97,9 @@ export const FeaturedProject = ({}) => {
         </span>
       </SectionDesc>
 
-      {SelectedProjects.map((project) => {
+      {SelectedProjects.map((project, i) => {
         return (
-          <Link href={project.link}>
+          <Link key={i + "key"} href={project.link}>
             <Container>
               <span>{project.icon}</span>
               <div>
