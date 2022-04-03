@@ -8,10 +8,8 @@ import {
   İconWrap,
   Divider,
 } from "../styles/Index.styled.js";
+import { FeaturedProject } from "../src/components/FeaturedProject";
 import { LinkedinIcon, GithubIcon } from "../styles/GlobalStyle";
-import { FeaturedProject } from "../src/components/FeaturedProject.js";
-
-import Router, { useRouter } from "next/router";
 
 export default function Home() {
   return (

@@ -91,7 +91,7 @@ export default function theMap() {
             focus on code.
           </span>
         </Obstacles>
-        <TechStack />
+        <TechStack which={"tailwind"} />
       </Projectİnfos>
     </Container>
   );

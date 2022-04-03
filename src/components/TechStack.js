@@ -32,7 +32,7 @@ const TechStackContainer = styled.div`
   }
 `;
 
-export const TechStack = () => {
+export const TechStack = ({ which }) => {
   return (
     <>
       <TechStackContainer>
@@ -44,12 +44,18 @@ export const TechStack = () => {
           <span>
             <SvgFramerMotion />
           </span>
-          <span>
-            <SvgTailwind />
-          </span>
-          <span>
-            <SvgRedux />
-          </span>
+
+          {which === "tailwind" && (
+            <span>
+              <SvgTailwind />
+            </span>
+          )}
+
+          {which === "redux" && (
+            <span>
+              <SvgRedux />
+            </span>
+          )}
         </div>
       </TechStackContainer>
     </>

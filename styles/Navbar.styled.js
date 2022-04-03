@@ -11,6 +11,14 @@ export const Container = styled.div`
   width: 100%;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(9.5px);
+
+  @media (max-width: 768px) {
+    bottom: 0;
+
+    div:nth-child(1) {
+      height: 1px;
+    }
+  }
 `;
 export const Navigation = styled.div`
   display: flex;

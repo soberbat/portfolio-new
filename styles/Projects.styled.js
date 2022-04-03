@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "./GlobalStyle";
 
 export const Inner = styled.section`
   width: 100%;
@@ -8,6 +9,10 @@ export const Inner = styled.section`
   gap: 10rem;
   align-items: center;
   flex-direction: column;
+
+  @media ${device.tablet} {
+    padding: 2rem 2rem 3rem 2rem;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -73,6 +78,15 @@ export const TextContainer = styled.div`
       font-style: italic;
     }
   }
+
+  @media ${device.tablet} {
+    text-align: justify;
+    max-width: 100%;
+
+    h1 {
+      text-align: center;
+    }
+  }
 `;
 
 export const CtaContainer = styled.div`
@@ -88,5 +102,11 @@ export const CtaContainer = styled.div`
     border: 0.4px gainsboro solid;
     padding: 0.4rem 1rem;
     border-radius: 20px;
+  }
+
+  @media ${device.tablet} {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 `;

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import {
   ProjectContainer,
   TextContainer,
@@ -10,6 +11,8 @@ import Image from "next/image";
 export const Project = ({
   project,
   header,
+  live,
+  sourceCode,
   descriptionOne,
   descriptionTwo,
 }) => {
@@ -24,8 +27,12 @@ export const Project = ({
         <span>{descriptionTwo}</span>
       </TextContainer>
       <CtaContainer>
-        <button>View Live</button>
-        <button>Source Code</button>
+        <Link href={live}>
+          <button>View Live</button>
+        </Link>
+        <Link href={sourceCode}>
+          <button>Source Code</button>
+        </Link>
       </CtaContainer>
     </ProjectContainer>
   );

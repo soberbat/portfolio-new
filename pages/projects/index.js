@@ -7,6 +7,8 @@ const projectsİnfo = [
   {
     header: "Avalanche",
     project: "avalanche",
+    sourceCode: "https://github.com/soberbat/Avalanche",
+    live: "https://avalanche-00.netlify.app/",
     descriptionOne:
       "Main takeaway of this project  (after using Tailwindcss for a while) was figuring out that the library in the end is great for quick-short projects. Trust me! İt gets really challenging to keep code clean even if you use frameworks or other solutions Tailwindcss offers. At least it was what I experienced. ",
     descriptionTwo:
@@ -16,6 +18,8 @@ const projectsİnfo = [
   {
     header: "Avalanche X | Apply Grant",
     project: "applygrant",
+    sourceCode: "https://github.com/soberbat/Grant-Form",
+    live: "https://apply-grant-00.netlify.app/",
     descriptionOne:
       "This project is all about forms and interactions. I've came across with this beautiful JotForm form. Sections have their own vertical slider-like transition which is made using Vanilla JS and every section we see, there is a different update in the interface according to the data user entered. There is a progress bar in up top. Also the spinning circles was made with CSS Doodle. ",
     descriptionTwo:
@@ -24,6 +28,8 @@ const projectsİnfo = [
   {
     header: "E-Reel Mini",
     project: "ereel",
+    sourceCode: "https://github.com/soberbat/E-reel",
+    live: "https://e-reel.netlify.app/ ",
     descriptionOne:
       "I was looking for sites to copy and sharpen my skills. First thing I do when looking for inspiration would be check the Awwwards. So I did and fell in love with this site. How its animating smoothly, colors, general Uİ and of course the romance that french gives. ",
     descriptionTwo:
@@ -32,6 +38,8 @@ const projectsİnfo = [
   {
     header: "Awwax Wallet",
     project: "wallet",
+    sourceCode: "https://github.com/soberbat/Wallet-App",
+    live: "https://awwax-w-00.netlify.app/",
     descriptionOne:
       "Back when I was obsessed with Crypto Currency, I came across with this smart contracts platform Avalanche. And in order to access your wallet there you'd need an app that you create an mnemonic phrase. So this app lets you create a mnemonic phase with fetched data. And requires you to complete the phase on a modal. ",
     descriptionTwo:

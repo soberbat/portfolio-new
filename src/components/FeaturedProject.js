@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
+import { device } from "../../styles/GlobalStyle";
 
 const Container = styled.div`
   background-color: #fdfdfd;
@@ -14,9 +15,6 @@ const Container = styled.div`
   align-items: center;
   transition: all ease-in-out 0.3s;
   cursor: pointer;
-  :hover {
-    transform: translateY(-5px);
-  }
 
   span {
     color: #1b4353;
@@ -33,6 +31,19 @@ const Container = styled.div`
       color: ${({ theme }) => theme.grayDarker};
       font-size: 0.8rem;
       line-height: 1rem;
+    }
+  }
+
+  @media ${device.tablet} {
+    padding: 1rem 1rem;
+    line-height: 0.3rem;
+    span {
+      font-size: 0.6rem;
+    }
+    div {
+      span {
+        font-size: 0.7rem;
+      }
     }
   }
 `;
@@ -74,10 +85,6 @@ const SelectedProjects = [
     link: "/projects/resume-app",
   },
 ];
-
-// const containerProps = {
-//   onClick: e =>
-// }
 
 export const FeaturedProject = ({}) => {
   return (

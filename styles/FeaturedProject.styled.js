@@ -22,6 +22,7 @@ export const Container = styled.div`
       position: static;
       height: auto;
       width: auto;
+
       h1 {
         font-size: 3rem;
       }
@@ -34,6 +35,8 @@ export const Container = styled.div`
       position: static;
       height: auto;
       width: auto;
+
+      padding: 1.3rem;
     }
   }
 `;

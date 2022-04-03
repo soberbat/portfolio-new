@@ -83,10 +83,12 @@ export default function theMap() {
 
           <span>
             The map project react app was a frustration for me in that i saw
-            Tailwindcss wasn't a fit for me. So I looked for solutions and
+            Tailwindcss wasn't a fit for me. So I looked for solutions and came
+            across with Styled Components. İt was super easy to get used to it
+            and use its magical powers!
           </span>
         </Obstacles>
-        <TechStack />
+        <TechStack which={"redux"} />
       </Projectİnfos>
     </Container>
   );

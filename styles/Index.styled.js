@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "./GlobalStyle";
 
 export const Container = styled.div`
   padding: 8rem 0;
@@ -7,6 +8,10 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media ${device.tablet} {
+    padding: 2rem 2rem 5rem 2rem;
+  }
 `;
 
 export const Inner = styled.section`
@@ -41,6 +46,17 @@ export const Description = styled.section`
       color: black;
       margin-top: 0;
       margin-right: 0.4rem;
+    }
+  }
+  @media ${device.tablet} {
+    h1 {
+      font-size: 2.3rem;
+      line-height: 3.2rem;
+      text-align: center;
+    }
+
+    span {
+      text-align: justify;
     }
   }
 `;
