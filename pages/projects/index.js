@@ -52,7 +52,7 @@ export default function projects() {
     <Container>
       <Inner>
         {projectsİnfo.map((project, i) => (
-          <Project key={i + key} {...project} />
+          <Project key={i + "key"} {...project} />
         ))}
       </Inner>
     </Container>
