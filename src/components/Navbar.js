@@ -11,7 +11,7 @@ const Navbar = () => {
         <Logo width="75px" />
         <ul>
           <li>
-            <Link href="/">
+            <Link scroll={false} href="/">
               <a>Home</a>
             </Link>
           </li>

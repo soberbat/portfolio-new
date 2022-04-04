@@ -40,11 +40,11 @@ export const theme = {
 export const PageTransitionMotionProps = {
   initial: {
     opacity: 0,
-    x: 50,
+    y: 10,
   },
   animate: {
     opacity: 1,
-    x: 0,
+    y: 0,
     ease: "ease-out",
     transition: {
       duration: 0.5,
