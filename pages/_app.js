@@ -3,7 +3,7 @@ import { SplashScreen } from "../src/components/SplashScreen";
 import { ThemeProvider } from "styled-components";
 import "../styles/globals.css";
 import Layout from "../src/components/Layout";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import {
   GlobalStyle,
