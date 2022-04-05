@@ -1,8 +1,7 @@
-import React from "react";
 import styled from "styled-components";
 import SvgBbLogo01 from "./Logo";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react/cjs/react.development";
+import React, { useEffect, useState } from "react";
 
 const Container = styled(motion.div)`
   width: 100vw;

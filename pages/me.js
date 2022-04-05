@@ -1,3 +1,7 @@
-export default function Me() {
-  return <div>me</div>;
-}
+import React from "react";
+
+const Me = () => {
+  return <div>safafsasfsfas</div>;
+};
+
+export default Me;
