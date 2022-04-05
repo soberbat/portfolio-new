@@ -32,15 +32,13 @@ export default function Home() {
               End Developer. With 1+ years of <span> Graphic Design </span>
               experience I'am turning pretty much everything into an experience
               with interactions and visually pleasing seamless user interfaces
-              backed with <span>concise&clean</span> code structure with
-              background.
+              backed with <span>concise&clean</span> code structure.
             </span>
 
             <span>
-              Organized, and skilled in written communication with effective
-              time management skills. Able to effectively self-manage during
-              independent projects, and willing to do so as collaborate as part
-              of a productive and excited team.
+              Able to effectively self-manage during independent projects, and
+              willing to do so as collaborate as part of a productive and
+              excited team.
             </span>
 
             <İconWrap>
