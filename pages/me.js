@@ -119,13 +119,6 @@ export default function Me() {
           </AboutThisPage>
         </Inner>
       </Container>
-      <Contact>
-        <Link href={"https://github.com/soberbat"}>{GithubIcon}</Link>
-        <span>Contact Me!</span>
-        <Link href={"https://www.linkedin.com/in/berat-gen%C3%A7-2a90b2214/"}>
-          {LinkedinIcon}
-        </Link>
-      </Contact>
     </>
   );
 }

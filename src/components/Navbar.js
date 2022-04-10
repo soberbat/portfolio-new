@@ -8,7 +8,7 @@ const Navbar = () => {
     <Container>
       <Gradient></Gradient>
       <Navigation>
-        <Logo width="75px" />
+        <Logo width="50px" />
         <ul>
           <li>
             <Link scroll={false} href="/">

@@ -20,7 +20,7 @@ export const Container = styled.div`
     }
 
     div:nth-child(2) {
-      padding: 1rem 2rem;
+      padding: 0.6rem 2rem;
     }
   }
 `;
