@@ -29,21 +29,22 @@ export default function Home() {
 
             <span>
               I'm Berat Genç, <span>Istanbul|TR </span> based self taught Front
-              End Developer. With 1+ years of <span> Graphic Design </span>
-              experience I'am turning pretty much everything into an experience
-              with interactions and visually pleasing seamless user interfaces
-              backed with <span>concise&clean</span> code structure.
+              End Developer. I pay special attention to design to deliver
+              holistic, engaging & approachable application interfaces with my
+              graphic design background.
             </span>
 
             <span>
-              Able to effectively self-manage during independent projects, and
-              willing to do so as collaborate as part of a productive and
-              excited team.
+              Here you can explore visually pleasing seamless user interfaces
+              backed with <span>concise&clean</span> code structure. You can
+              check my socials here:
             </span>
 
             <İconWrap>
-              <a href="www.google.com">{LinkedinIcon}</a>
-              <a href="www.google.com">{GithubIcon}</a>
+              <a href="https://www.linkedin.com/in/berat-gen%C3%A7-2a90b2214/">
+                {LinkedinIcon}
+              </a>
+              <a href="https://github.com/soberbat">{GithubIcon}</a>
             </İconWrap>
 
             <Divider />

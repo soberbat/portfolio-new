@@ -48,7 +48,7 @@ const Container = styled.div`
   }
 `;
 const SectionDesc = styled.div`
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   h3 {
     font-weight: 700;
     font-size: 1.9rem;
@@ -67,22 +67,21 @@ const SectionDesc = styled.div`
 
 const SelectedProjects = [
   {
-    header: "The Map",
-
-    description:
-      "An interactive map that shows neighbouring countries of a selected country and gives information about population,currency etc. My first react app where I utilized Framer-motion, React Hooks. ",
-
-    icon: "🌎",
-    link: "/projects/the-map",
-  },
-
-  {
     header: "R-Resume",
     description:
-      "An interactive map that shows neighbouring countries of a selected country and gives information about population,currency etc. My first react app where I utilized Framer-motion, React Hooks. ",
+      "Resume creating tool that you can preview your given data. Then download as PDF. Used Redux to store data globally and for easy retrieval of data to a component in the component tree. Animated using framer-motion. Styled with styled components.",
 
     icon: "📄",
     link: "/projects/resume-app",
+  },
+  {
+    header: "The Map",
+
+    description:
+      "An interactive map that shows neighbouring countries of a selected country and gives information about population,currency etc. My first react app where I utilized Framer-motion, React Hooks. Styled with Tailwindcss. ",
+
+    icon: "🌎",
+    link: "/projects/the-map",
   },
 ];
 
@@ -92,8 +91,8 @@ export const FeaturedProject = ({}) => {
       <SectionDesc>
         <h3>Featured Projects</h3>
         <span>
-          A collection of some projects that have shipped recently. And of
-          course this website made with <br /> <span>Next.js</span>
+          A collection of some projects that have shipped recently. The website
+          you are viewing now is made with <span>Next.js</span>
         </span>
       </SectionDesc>
 

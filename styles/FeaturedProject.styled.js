@@ -165,7 +165,8 @@ export const Obstacles = styled(motion.div)`
     color: ${({ theme }) => theme.grayDarker};
 
     ul {
-      color: ${({ theme }) => theme.text};
+      /* color: ${({ theme }) => theme.text}; */
+      margin-top: 1rem;
     }
   }
 `;

@@ -1,13 +1,3 @@
-@font-face {
-  font-family: Toboggan;
-  src: url("../public/fonts/Toboggan-HeavyCAPS.woff2");
-}
-
-@font-face {
-  font-family: Toboggan-Light;
-  src: url("../public/fonts/Light.woff2");
-}
-
 html,
 body {
   padding: 0;
@@ -45,4 +35,9 @@ a {
   }
 }
 
+@media (max-width: 758px) {
+  html {
+    font-size: 10px;
+  }
+}
 /* LOGO ANİMATİON */

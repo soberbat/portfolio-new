@@ -12,7 +12,7 @@ const Container = styled(motion.div)`
   justify-content: center;
   overflow: hidden;
   z-index: 9999;
-  background-color: #f4f4ed;
+  background-color: white;
 `;
 
 const LoadingSimulator = styled.div`
@@ -20,7 +20,7 @@ const LoadingSimulator = styled.div`
   height: 7px;
   background-color: white;
   border-radius: 12px;
-
+  border: 0.4px solid gainsboro;
   align-items: center;
   display: flex;
   span {
