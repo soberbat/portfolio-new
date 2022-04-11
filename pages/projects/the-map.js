@@ -27,7 +27,7 @@ export default function theMap() {
 
         <Cta>
           <h1>A Reactive Map</h1>
-          <Link href={"https://bege-map.netlify.app/"}>
+          <Link href={"https://zingy-monstera-c0de41.netlify.app/"}>
             <span> Go Live {UpRightArrow}</span>
           </Link>
         </Cta>
