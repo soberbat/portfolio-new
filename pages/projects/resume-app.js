@@ -28,7 +28,7 @@ export default function theMap() {
 
         <Cta>
           <h1>A Resume Creating Tool</h1>
-          <Link href={"https://r-resume00.netlify.app"}>
+          <Link href={"https://helpful-sprite-b89435.netlify.app/"}>
             <span> Go Live {UpRightArrow}</span>
           </Link>
         </Cta>
