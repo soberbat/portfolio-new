@@ -27,10 +27,10 @@ export const Project = ({
         <span>{descriptionTwo}</span>
       </TextContainer>
       <CtaContainer>
-        <a target="_blank" href={live}>
+        <a target="_blank" rel="noreferrer" href={live}>
           <button>View Live</button>
         </a>
-        <a target="_blank" href={sourceCode}>
+        <a target="_blank" rel="noreferrer" href={sourceCode}>
           <button>Source Code</button>
         </a>
       </CtaContainer>
