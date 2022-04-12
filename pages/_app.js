@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps, router }) {
   useEffect(() => {
     setTimeout(() => {
       setisVisible(false);
-    }, 5000);
+    }, 2500);
   }, []);
   // DİSPLAY LOGO AND REMOVE AFTER SOME TİME
 
@@ -40,7 +40,6 @@ function MyApp({ Component, pageProps, router }) {
   return (
     <>
       {isVisible && <SplashScreen />}
-
       {!isVisible && (
         <ThemeProvider theme={theme}>
           <GlobalStyle />

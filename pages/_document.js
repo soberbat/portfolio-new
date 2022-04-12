@@ -32,6 +32,21 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=[G-KL9RDR3BB3]"
+          />
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '[Tracking ID]', { page_path: window.location.pathname });
+            `,
+            }}
+          />
           <link
             href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap"
             rel="stylesheet"

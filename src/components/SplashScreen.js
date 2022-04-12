@@ -29,7 +29,7 @@ const LoadingSimulator = styled.div`
     height: 100%;
     display: inline-block;
     border-radius: inherit;
-    animation: move 4.2s infinite;
+    animation: move 1.5s infinite;
     animation-delay: 1s;
   }
 
@@ -56,7 +56,7 @@ export const SplashScreen = () => {
     >
       <Head>
         <title key="berat">Berat Genç</title>
-        <meta key="ogType" name="og:type" content="mes" />
+        <meta key="ogType" name="og:type" content="splash" />
       </Head>
       <SvgBbLogo01 width={InnerHeight > 768 ? "500" : "150"} />
       <LoadingSimulator>

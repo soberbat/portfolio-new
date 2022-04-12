@@ -53,6 +53,7 @@ export default function projects() {
     <Container>
       <Head>
         <title key="projects">Projects</title>
+        <meta key="ogType" name="og:type" content="projects" />
       </Head>
       <Inner>
         {projectsİnfo.map((project, i) => (
