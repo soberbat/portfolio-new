@@ -21,7 +21,7 @@ export default function theMap() {
   return (
     <Container>
       <Head>
-        <title>The Map</title>
+        <title key="map">The Map</title>
       </Head>
       <ProjectHeadlineSection>
         <Link href={"/"}>

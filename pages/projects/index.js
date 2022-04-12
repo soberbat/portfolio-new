@@ -52,7 +52,7 @@ export default function projects() {
   return (
     <Container>
       <Head>
-        <title>Projects</title>
+        <title key="projects">Projects</title>
       </Head>
       <Inner>
         {projectsİnfo.map((project, i) => (

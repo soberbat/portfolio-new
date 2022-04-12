@@ -22,7 +22,7 @@ export default function theMap() {
   return (
     <Container>
       <Head>
-        <title>Resume Tool</title>
+        <title key="resume">Resume Tool</title>
       </Head>
       <ProjectHeadlineSection resume>
         <Link href={"/"}>

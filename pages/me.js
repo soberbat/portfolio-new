@@ -14,7 +14,7 @@ export default function Me() {
   return (
     <Container>
       <Head>
-        <title>Me</title>
+        <title key="me">Me</title>
       </Head>
       <Inner>
         <WhoAmI>

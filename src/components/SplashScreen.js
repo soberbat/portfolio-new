@@ -55,7 +55,7 @@ export const SplashScreen = () => {
       animate={{ opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
     >
       <Head>
-        <title>Berat Genç</title>
+        <title key="berat">Berat Genç</title>
       </Head>
       <SvgBbLogo01 width={InnerHeight > 768 ? "500" : "150"} />
       <LoadingSimulator>
