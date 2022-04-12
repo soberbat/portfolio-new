@@ -15,6 +15,7 @@ export default function Me() {
     <Container>
       <Head>
         <title key="me">Me</title>
+        <meta key="ogType" name="og:type" content="me" />
       </Head>
       <Inner>
         <WhoAmI>

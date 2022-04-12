@@ -23,6 +23,7 @@ export default function theMap() {
     <Container>
       <Head>
         <title key="resume">Resume Tool</title>
+        <meta key="ogType" name="og:type" content="resume" />
       </Head>
       <ProjectHeadlineSection resume>
         <Link href={"/"}>

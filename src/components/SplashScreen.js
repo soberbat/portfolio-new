@@ -56,6 +56,7 @@ export const SplashScreen = () => {
     >
       <Head>
         <title key="berat">Berat Genç</title>
+        <meta key="ogType" name="og:type" content="mes" />
       </Head>
       <SvgBbLogo01 width={InnerHeight > 768 ? "500" : "150"} />
       <LoadingSimulator>

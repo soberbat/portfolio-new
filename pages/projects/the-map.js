@@ -22,6 +22,7 @@ export default function theMap() {
     <Container>
       <Head>
         <title key="map">The Map</title>
+        <meta key="ogType" name="og:type" content="map" />
       </Head>
       <ProjectHeadlineSection>
         <Link href={"/"}>
