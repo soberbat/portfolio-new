@@ -50,18 +50,15 @@ const projectsİnfo = [
 
 export default function projects() {
   return (
-    <>
+    <Container>
       <Head>
         <title>Projects</title>
       </Head>
-
-      <Container>
-        <Inner>
-          {projectsİnfo.map((project, i) => (
-            <Project key={i + "key"} {...project} />
-          ))}
-        </Inner>
-      </Container>
-    </>
+      <Inner>
+        {projectsİnfo.map((project, i) => (
+          <Project key={i + "key"} {...project} />
+        ))}
+      </Inner>
+    </Container>
   );
 }

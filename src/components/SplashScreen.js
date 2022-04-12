@@ -2,6 +2,7 @@ import styled from "styled-components";
 import SvgBbLogo01 from "./Logo";
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
+import Head from "next/head";
 
 const Container = styled(motion.div)`
   width: 100vw;
@@ -53,6 +54,9 @@ export const SplashScreen = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.9, ease: "easeInOut" } }}
     >
+      <Head>
+        <title>Berat Genç</title>
+      </Head>
       <SvgBbLogo01 width={InnerHeight > 768 ? "500" : "150"} />
       <LoadingSimulator>
         <span> </span>
