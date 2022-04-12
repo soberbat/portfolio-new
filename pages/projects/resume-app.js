@@ -32,7 +32,11 @@ export default function theMap() {
 
         <Cta>
           <h1>A Resume Creating Tool</h1>
-          <a target="_blank" href="https://helpful-sprite-b89435.netlify.app/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://helpful-sprite-b89435.netlify.app/"
+          >
             <span> Go Live {UpRightArrow}</span>
           </a>
         </Cta>

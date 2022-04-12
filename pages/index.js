@@ -43,11 +43,16 @@ export default function Home() {
             <İconWrap>
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://www.linkedin.com/in/berat-gen%C3%A7-2a90b2214/"
               >
                 {LinkedinIcon}
               </a>
-              <a target="_blank" href="https://github.com/soberbat">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/soberbat"
+              >
                 {GithubIcon}
               </a>
             </İconWrap>

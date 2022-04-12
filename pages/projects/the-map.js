@@ -33,6 +33,7 @@ export default function theMap() {
           <h1>A Reactive Map</h1>
           <a
             target="_blank"
+            rel="noreferrer"
             href={"https://zingy-monstera-c0de41.netlify.app/"}
           >
             <span> Go Live {UpRightArrow}</span>
