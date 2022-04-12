@@ -41,10 +41,15 @@ export default function Home() {
             </span>
 
             <İconWrap>
-              <a href="https://www.linkedin.com/in/berat-gen%C3%A7-2a90b2214/">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/berat-gen%C3%A7-2a90b2214/"
+              >
                 {LinkedinIcon}
               </a>
-              <a href="https://github.com/soberbat">{GithubIcon}</a>
+              <a target="_blank" href="https://github.com/soberbat">
+                {GithubIcon}
+              </a>
             </İconWrap>
 
             <Divider />
