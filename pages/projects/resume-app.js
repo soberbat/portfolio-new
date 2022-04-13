@@ -48,9 +48,9 @@ export default function theMap() {
           <Headline> About The Project</Headline>
 
           <AboutText>
-            This app let's you create a resume and download it as a PDF. You can
-            easily add your skills, education and internships to your resume.
-            Also there are extras. There's also a logo that designed by me.
+            This app lets you create a resume and download it as a PDF. You can
+            easily add your skills, education, and internships to your resume.
+            Also, there are extras. There's also a logo that was designed by me.
           </AboutText>
         </AboutContainer>
 
@@ -74,12 +74,13 @@ export default function theMap() {
           <span>
             Before getting into code I knew that I need to store form inputs
             somewhere and store the related ones in an object that can be used
-            to display in preview. That wouldn't be the case without a state
+            to display in the preview. That wouldn't be the case without a state
             management tool. So I've got the help of Redux since the app was too
-            complex to use regular state in react. Because with regular state:
+            complex to use regular state in react. Because with the regular
+            state:
             <ul>
               <li>
-                I wouldn't be storing all the values in a preffered location.
+                I wouldn't be storing all the values in a preferred location.
               </li>
 
               <li>
@@ -93,10 +94,10 @@ export default function theMap() {
           <span>
             <Link href={"/projects/the-map"}>The map project </Link> was a
             frustration for me in that I saw Tailwindcss wasn't a fit for me
-            even though there were work arounds to make your Tailwindcss code
-            look clean. So I looked for solutions and came across with CSS in JS
-            library Styled Components. It was super easy to get used to it and
-            use its magical powers like nesting, dynamic styling, theming etc.
+            even though there were workarounds to make your Tailwindcss code
+            look clean. So I looked for solutions and came across CSS in JS
+            library Styled Components. It was very easy to get used to it and
+            use its magical powers like nesting, dynamic styling, theming, etc.
           </span>
         </Obstacles>
         <TechStack which={"redux"} />

@@ -28,7 +28,7 @@ export default function Home() {
             </h1>
 
             <span>
-              I'm Berat Genç, <span>Istanbul|TR </span> based self taught Front
+              I'm Berat Genç, <span>Istanbul|TR </span> based self-taught Front
               End Developer. I pay special attention to design to deliver
               holistic, engaging & approachable application interfaces with my
               graphic design background.

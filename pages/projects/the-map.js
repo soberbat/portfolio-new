@@ -49,10 +49,10 @@ export default function theMap() {
 
           <AboutText>
             This project is my first React app. İt is made to showcase data
-            fetching skills and manipulating that data according to the desired
+            fetching skills and manipulate that data according to the desired
             result. There's an SVG map which you can explore selected countries'
-            particular attributes like population, neighbouring countries,
-            currency and so on. Got the help of
+            particular attributes like population, neighboring countries,
+            currency, and so on. Got the help of
             <span> SVGR</span> and
             <span> Particle.JS</span> so big thanks to the developers of these
             libraries.
@@ -81,20 +81,20 @@ export default function theMap() {
 
           <span>
             The app was initially made with the thought of displaying illegal
-            animal trafficing & hunting there were APİ's that provide
-            information about endangered animals but even getting APİ key was a
-            problem. I've sent couple of mails but got 0 respond. So I gave up
-            and choose something relatively simple.
+            animal trafficking & hunting. There were API that provides
+            information about endangered animals but even getting the APİ key
+            was a problem. I've sent a couple of emails but got 0 responses. So
+            I gave up and choose something relatively simple.
           </span>
 
           <span>
             Finally what challenged me the most was code maintenance. Using
-            tailwind in HTML was really really hideous. So I thought I could
-            give another shot using it with React. Of course it was not the same
-            as using it with HTML but still with the state of mind I have now
-            every letter matters. Template literals, questions marks in
-            className attribute to conditionally use classes and extra
-            framer-motion related attributes made it super hard to read. And
+            tailwind in HTML was really hideous. So I thought I could give it
+            another shot using it with React. Of course, it was not the same as
+            using it with HTML but still with the state of mind I have now every
+            letter matters. Template literals, questions marks in className
+            attribute to conditionally use classes and extra
+            framer-motion-related attributes made it super hard to read. And
             focus on code.
           </span>
         </Obstacles>

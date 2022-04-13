@@ -69,7 +69,7 @@ const SelectedProjects = [
   {
     header: "R-Resume",
     description:
-      "Resume creating tool that you can preview your given data. Then download as PDF. Used Redux to store data globally and for easy retrieval of data to a component in the component tree. Animated using framer-motion. Styled with styled components.",
+      "Resume creating is a tool that you can preview your given data. Then download it as a PDF. Used Redux to store data globally and for easy retrieval of data to a component in the component tree. Animated using framer-motion. Styled with styled-components.",
 
     icon: "📄",
     link: "/projects/resume-app",
@@ -78,7 +78,7 @@ const SelectedProjects = [
     header: "The Map",
 
     description:
-      "An interactive map that shows neighbouring countries of a selected country and gives information about population,currency etc. My first react app where I utilized Framer-motion, React Hooks. Styled with Tailwindcss. ",
+      "An interactive map that shows neighboring countries of a selected country and gives information about population, currency, etc. My first react app where I utilized Framer-motion, React Hooks. Styled with Tailwindcss.  ",
 
     icon: "🌎",
     link: "/projects/the-map",
