@@ -75,6 +75,14 @@ const SelectedProjects = [
     link: "/projects/resume-app",
   },
   {
+    header: "Weather App",
+    description:
+      " Fully responsive, simple weather app made with Next.js with the help of Chart.js & Swiper.js. Used OpenWeaherAPI to retrieve data. ",
+
+    icon: "🌤",
+    link: "/projects/weather-app",
+  },
+  {
     header: "The Map",
 
     description:

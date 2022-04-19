@@ -42,8 +42,10 @@ export const Container = styled.div`
 `;
 
 export const ProjectHeadlineSection = styled.div`
-  color: ${(props) => (props.resume ? "white" : colors.headline)};
-  background-color: ${(props) => (props.resume ? "blue" : colors.background)};
+  color: ${(props) =>
+    props.resume ? "white" : props.weather ? "#FFFDED" : colors.headline};
+  background-color: ${(props) =>
+    props.resume ? "blue" : props.weather ? "#4F4789" : colors.background};
   display: flex;
   justify-content: space-between;
   flex-direction: column;
