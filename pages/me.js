@@ -51,10 +51,6 @@ export default function Me() {
             <span>SustSolutions</span>
             <span>Graphic Designer</span>
           </Item>
-          <Item>
-            <span>Istanbul Pride </span>
-            <span> Activist - Social Media / Party Comittee </span>
-          </Item>
         </WorkEducation>
 
         <WorkEducation>
