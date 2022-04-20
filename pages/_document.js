@@ -1,8 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
-import Script from "next/script";
-
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet();
@@ -34,19 +32,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <script
-            src="https://www.googletagmanager.com/gtag/js?id=G-KL9RDR3BB3"
-            strategy="afterInteractive"
-          />
-          <script id="google-analytics" strategy="afterInteractive">
-            {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-KL9RDR3BB3');
-        `}
-          </script>
           <link
             href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap"
             rel="stylesheet"
